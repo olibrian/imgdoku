@@ -1,7 +1,7 @@
 require 'capybara/dsl'
 require 'selenium-webdriver'
 
-Capybara.default_driver = :selenium_chrome
+Capybara.default_driver = :selenium
 
 url = 'https://demo.hitobito.com'
 
