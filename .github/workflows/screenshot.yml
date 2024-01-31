@@ -25,16 +25,6 @@ jobs:
 
     - name: Run application and capture screenshots with Capybara
       run: |
-        # Assuming your Ruby application has a script to start the server
-        # Replace 'start_server_command' with your actual command
-        start_server_command="your_start_server_command"
-
-        # Start your Ruby application server in the background
-        $start_server_command &
-
-        # Wait for the server to be up and running (adjust as needed)
-        sleep 10
-
         # Run Capybara script to capture screenshots
         bundle exec ruby capture-screenshots.rb
 
